@@ -91,6 +91,31 @@ logo =                                          """
 \033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             2.0.0
 \033[1;37m------------------------\033[1;37m------------------------ """                                              
 
+def login():
+    os.system('clear')
+    print(logo)
+    tok = input('  Put access token: ')
+    if 'EAAB' in tok:
+        pass
+    else:
+        print('  Only fb ads access token can be used for scraping data')
+        print('  Check main menu for creating fb ads access token....o')
+        os.sys.exit()
+    try:
+        u = requests.get('https://graph.facebook.com/me?access_token='+tok).text
+        u1 = json.loads(u)
+        name = u1['name']
+        ts = open('access_token.txt', 'w')
+        ts.write(tok)
+        ts.close()
+        print(' Logged in successfully')
+        time.sleep(1)
+        main()
+    except KeyError:
+        print('\n  Invalid token provided, try again  ')
+        time.sleep(1)
+        login()
+        
 def hasil(OK,cp):
 	if not len(OK) != 0:
 	    pass
