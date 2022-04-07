@@ -19,7 +19,7 @@ except ImportError:
     os.system('pip install bs4')
 
 import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
-from concurrent.futures import ThreadPoolExecutor as sarfrazUCY
+from concurrent.futures import ThreadPoolExecutor as FranzUCY
 from datetime import datetime
 from bs4 import BeautifulSoup
 
@@ -72,23 +72,18 @@ def jalan(z):
         time.sleep(0.01)
 
 logo =                                          """   
-\033[1;37m$$\   $$\                     
-\033[1;37m$$ |  $$ |                    
-\033[1;37m$$ |  $$ | $$$$$$$\ $$\   $$\ 
-\033[1;37m$$ |  $$ |$$  _____|$$ |  $$ |
-\033[1;37m$$ |  $$ |$$ /      $$ |  $$ |
-\033[1;37m$$ |  $$ |$$ |      $$ |  $$ |
-\033[1;37m\$$$$$$  |\$$$$$$$\ \$$$$$$$ |
- \033[1;37m \______/  \_______| \____$$ |
-            \033[1;37m        $$\   $$ |
-              \033[1;37m      \$$$$$$  |
-                \033[1;37m     \______/    
+\033[1;37m     db    db  .o88b. db    db 
+\033[1;37m     88    88 d8P  Y8 `8b  d8' 
+\033[1;37m     88    88 8P       `8bd8'  
+\033[1;37m     88    88 8b         88    
+\033[1;37m     88b  d88 Y8b  d8    88    
+\033[1;37m     ~Y8888P'  `Y88P'    YP                                        
 \x1b[1;97m------------------------\x1b[1;97m------------------------
 \033[1;31m\033[1;37m Author \x1b[1;97m : \033[1;37m           Francis Uchenna
 \033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          Francis Uchenna 
 \033[1;31m\033[1;37m GitHub\x1b[1;97m  : \033[1;37m           Uchezzy - Ucy
 \033[1;31m\033[1;37m WhatsApp\x1b[1;97m: \033[1;37m         +2347011300587
-\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             2.0.0
+\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             2.0
 \033[1;37m------------------------\033[1;37m------------------------ """                                              
 
 def login():
@@ -123,9 +118,9 @@ def hasil(OK,cp):
 	    print('\n\n  \x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mUCY_OK.txt' % (H, P, str(len(ok))))
 	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mUCY_CP.txt' % (H, P, str(len(cp))))
 	    input("\x1b[1;97mPress enter to back UCY Menu ")
-	    sarfraz()
+	    Franz()
 
-def sarfraz():
+def Franz():
     os.system('clear')
     print(logo)
     ipm = requests.get(url_ip).json()
@@ -136,19 +131,19 @@ def sarfraz():
     print(' [2] Create File [Best-Method]')
     print(' [E] exit ')
     print('')
-    _sarfraz___ = input(' [?] Choose option : ')
-    if _sarfraz___ in ('1', '01'):
-        __xxx__().sarfrazx(id)
-    if _sarfraz___ in ('2', '02'):
+    _Franz___ = input(' [?] Choose option : ')
+    if _Franz___ in ('1', '01'):
+        __xxx__().Franzx(id)
+    if _Franz___ in ('2', '02'):
         create_file()
-    if _sarfraz___ in ('E', 'ee'):
+    if _Franz___ in ('E', 'ee'):
         pass
 
 
 class __xxx__:
     def __init__(self):
         self.id = []
-    def sarfrazx(self,id):
+    def Franzx(self,id):
         os.system("clear")
         print(logo)
         self.cnt = input('Put File Name : ')
@@ -161,7 +156,7 @@ class __xxx__:
             self.__pler__()
         else:
             print(' [!] Choose Correct One');
-            self.sarfrazx(id)
+            self.Franzx(id)
     def __metode__(self, user, __chi__, cebok):
         global ok,cp,loop
         sys.stdout.write(f"\r \x1b[1;97m[UCY] {loop}|{len(self.id)} [ok][{len(ok)}] [cp][{len(cp)}] ")
@@ -268,7 +263,7 @@ class __xxx__:
             print('\033[1;37m Total Auto file IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
             print(47*"-")
-            with sarfrazUCY(max_workers=30) as UCYworld:
+            with FranzUCY(max_workers=30) as UCYworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -302,7 +297,7 @@ class __xxx__:
             print('\033[1;37m Total IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
             print(47*"-")
-            with sarfrazUCY(max_workers=30) as UCYworld:
+            with FranzUCY(max_workers=30) as UCYworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -381,7 +376,7 @@ def manual():
     print('  Ids saved as: '+save_file)
     print(50*'-')
     input(' Press enter to back')
-    sarfraz()
+    Franz()
     
 def auto():
     os.system('rm -rf temp*')
@@ -496,4 +491,4 @@ def auto():
     
     
     
-sarfraz()
+Franz()
